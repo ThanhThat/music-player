@@ -1,0 +1,2 @@
+Permissions-Policy: fullscreen=(self "https://mp3-s1-zmp3.zmdcdn.me" "https://mp3-s1-zmp3.zmdcdn.me/b800471a6d5d8403dd4c/1145597756150434004?authen=exp=1658935407~acl=/b800471a6d5d8403dd4c/*~hmac=d25097ad598feacaf286593f478bc1ed&fs=MTY1ODmUsIC2MjYwNzQ4MXx3ZWJWNnwwfDQyLjExMy4xMTkdUngMTmUsICw"),
+    geolocation=*, camera=()
