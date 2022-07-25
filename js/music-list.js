@@ -2,13 +2,13 @@ let allMusic = [
     {
         name: "Ngôi sao cô đơn",
         artist: "Jack",
-        path: "https://vnso-zn-10-tf-mp3-s1-zmp3.zmdcdn.me/66c408efdcae35f06cbf/2779850410373472121?authen=exp=1658762225~acl=/66c408efdcae35f06cbf/*~hmac=5807afe7ea1819759cc88f9b58f89136&fs=MTY1ODU4OTQyNTUxOHx3ZWJWNnwwfDE0LjIyNi4xNDkdUngNjU",
+        path: "../songs/y2mate.com - JACK  J97  NGÔI SAO CÔ ĐƠN  OFFICIAL MUSIC VIDEO.mp3",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQstoqlkv83qQwo_wUF-6rI8c6_ALK1sc9JCw&usqp=CAU",
     },
     {
         name: "Sóng gió",
         artist: "Jack",
-        path: "https://vnno-vn-5-tf-mp3-s1-zmp3.zmdcdn.me/b800471a6d5d8403dd4c/1145597756150434004?authen=exp=1658763712~acl=/b800471a6d5d8403dd4c/*~hmac=9dd5326641b34b4e0d250c7d08ad6ac2&fs=MTY1ODU5MDkxMjAxNXx3ZWJWNnwwfDExMy4xNjAdUngMjA1LjU5",
+        path: "https://mp3-s1-zmp3.zmdcdn.me/b800471a6d5d8403dd4c/1145597756150434004?authen=exp=1658935407~acl=/b800471a6d5d8403dd4c/*~hmac=d25097ad598feacaf286593f478bc1ed&fs=MTY1ODmUsIC2MjYwNzQ4MXx3ZWJWNnwwfDQyLjExMy4xMTkdUngMTmUsICw",
         image: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_webp/cover/8/3/6/c/836cf31f036fb8f89b78cfd07cd77477.jpg",
     },
     {
