@@ -2,7 +2,7 @@ let allMusic = [
     {
         name: "Ngôi sao cô đơn",
         artist: "Jack",
-        path: "../songs/y2mate.com - JACK  J97  NGÔI SAO CÔ ĐƠN  OFFICIAL MUSIC VIDEO.mp3",
+        path: "ngoi_sao_co_don",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQstoqlkv83qQwo_wUF-6rI8c6_ALK1sc9JCw&usqp=CAU",
     },
     {

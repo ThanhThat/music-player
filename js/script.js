@@ -26,7 +26,7 @@ function loadMusic(indexNumb) {
     musicName.innerText = allMusic[indexNumb].name;
     musicArtist.innerText = allMusic[indexNumb].artist;
     musicImg.src = allMusic[indexNumb].image;
-    mainAudio.src = allMusic[indexNumb].path;
+    mainAudio.src = `../songs/${allMusic[indexNumb].path}.mp3`;
 }
 
 /**
@@ -111,9 +111,9 @@ function render() {
                     <span>${allMusic[index].name}</span>
                     <p>${allMusic[index].artist}</p>
                 </div>
-                <audio class="audio-${index}" src="${
+                <audio class="audio-${index}" src="../songs/${
             allMusic[index].path
-        }"></audio>
+        }.mp3"></audio>
                 <span id="audio-duration-${index}" class="audio-duration"></span>
             </li>
         `;
