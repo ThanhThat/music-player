@@ -1,5 +1,6 @@
 // let's select all required tags or elements
 const wrapper = document.querySelector(".wrapper"),
+    imgArea = wrapper.querySelector(".img-area"),
     musicImg = wrapper.querySelector(".img-area img"),
     musicName = wrapper.querySelector(".song-details .name"),
     musicArtist = wrapper.querySelector(".song-details .artist"),
@@ -14,6 +15,10 @@ const wrapper = document.querySelector(".wrapper"),
     hideMusicBtn = musicList.querySelector("#close"),
     ulTag = musicList.querySelector("ul");
 
+const imgGif = document.createElement("div");
+imgGif.classList.add("img-gif");
+imgGif.innerHTML = "<div class='img'></div>";
+
 let musicIndex = 0;
 
 window.addEventListener("load", () => {
@@ -26,7 +31,7 @@ function loadMusic(indexNumb) {
     musicName.innerText = allMusic[indexNumb].name;
     musicArtist.innerText = allMusic[indexNumb].artist;
     musicImg.src = allMusic[indexNumb].image;
-    mainAudio.src = `../songs/${allMusic[indexNumb].path}.mp3`;
+    mainAudio.src = `./songs/${allMusic[indexNumb].path}.mp3`;
 }
 
 /**
@@ -37,6 +42,7 @@ function loadMusic(indexNumb) {
 function playMusic() {
     wrapper.classList.add("paused");
     playPauseBtn.querySelector("i").innerText = "pause";
+    imgArea.appendChild(imgGif);
     mainAudio.play();
 }
 
@@ -45,6 +51,7 @@ function pauseMusic() {
     wrapper.classList.remove("paused");
     playPauseBtn.querySelector("i").innerText = "play_arrow";
     mainAudio.pause();
+    imgArea.removeChild(imgArea.lastChild);
 }
 
 // Next music function
@@ -55,7 +62,9 @@ function nextMusic() {
     }
     activeSongPlaying();
     loadMusic(musicIndex);
+    cdThumbAnimate.play();
     playMusic();
+    imgArea.appendChild(imgGif);
 }
 
 // prev music function
@@ -67,12 +76,14 @@ function prevMusic() {
     activeSongPlaying();
     loadMusic(musicIndex);
     playMusic();
+    imgArea.appendChild(imgGif);
 }
 
 // Repeat one Song function
 function repeatOneSong() {
     mainAudio.currentTime = 0;
     playMusic();
+    imgArea.appendChild(imgGif);
 }
 
 // Shuffle playlist
@@ -85,6 +96,7 @@ function shufflePlaylist() {
     activeSongPlaying();
     loadMusic(musicIndex);
     playMusic();
+    imgArea.appendChild(imgGif);
 }
 
 // convert time song
